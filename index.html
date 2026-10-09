@@ -1,48 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagihan Keskin - Personal Web Page</title>
+
+    <title>Nagihan Keskin | Personal Portfolio</title>
+
+    <meta name="description"
+          content="Welcome to Nagihan Keskin's personal portfolio. Geomatics Engineering student at Hacettepe University.">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Cute welcome cat -->
+    <div class="welcome-cat">
+        <span class="welcome-text">Welcome! ♡</span>
+
+        <span class="cat-art"
+              role="img"
+              aria-label="Waving cat">
+            🐱👋
+        </span>
+
+        <span class="cat-caption">
+            so happy you're here ✧
+        </span>
+    </div>
+
+
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">About Me</a>
-        <a href="projects.html">Experience & Projects</a>
+        <a href="index.html" aria-current="page">About Me</a>
+        <a href="projects.html">Experience &amp; Projects</a>
         <a href="maps.html">Web GIS (Maps)</a>
     </nav>
 
-    <div class="container">
-        <div class="profile-header">
-            <img src="images/profil.jpeg" alt="Nagihan Keskin" class="profile-img">
+
+    <!-- Main profile card -->
+    <main class="container">
+
+        <!-- Profile -->
+        <header class="profile-header">
+
+            <div class="image-frame">
+                <img
+                    src="images/profil.jpeg"
+                    alt="Nagihan Keskin"
+                >
+            </div>
+
             <h1>Nagihan Keskin</h1>
+
             <h3>Geomatics Engineering Student</h3>
-        </div>
 
-        <hr>
+            <p class="profile-tagline">
+                ✧ Exploring the world through spatial data ♡
+            </p>
 
-        <h2>About Me</h2>
-        <p>I was born on October 5, 2001, in Giresun. I am a student in Geomatics Engineering at Hacettepe University. I am highly interested in spatial data processing, computer science coursework, and advanced cartography. My soft skills include project management, analytical thinking, teamwork, and adaptability.</p>
+        </header>
 
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Playing chess</li>
-            <li>Folk dance</li>
-            <li>Riding a bike</li>
-        </ul>
 
-        <h2>Languages</h2>
-        <ul>
-            <li><strong>Turkish:</strong> Native</li>
-            <li><strong>English:</strong> B2</li>
-            <li><strong>German:</strong> A1</li>
-        </ul>
+        <hr class="soft-divider">
 
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> nagihankeskin4@gmail.com</p>
-    </div>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I was born on October 5, 2001, in Giresun.
+                I am a Geomatics Engineering student at Hacettepe University.
+                I am interested in spatial data processing, computer science,
+                and advanced cartography. My soft skills include project
+                management, analytical thinking, teamwork, and adaptability.
+            </p>
+        </section>
+
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+            <h2>Hobbies &amp; Interests</h2>
+
+            <ul class="pretty-list">
+                <li>♟ Playing chess</li>
+                <li>♡ Folk dance</li>
+                <li>✧ Riding a bike</li>
+            </ul>
+        </section>
+
+
+        <!-- Languages -->
+        <section id="languages">
+            <h2>Languages</h2>
+
+            <ul class="pretty-list">
+                <li>
+                    <strong>Turkish</strong>
+                    <span class="language-level">Native</span>
+                </li>
+
+                <li>
+                    <strong>English</strong>
+                    <span class="language-level">B2</span>
+                </li>
+
+                <li>
+                    <strong>German</strong>
+                    <span class="language-level">A1</span>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-card">
+                <span class="contact-icon">✉</span>
+
+                <div>
+                    <p class="contact-label">Let's get in touch!</p>
+
+                    <a href="mailto:nagihankeskin4@gmail.com">
+                        nagihankeskin4@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            Made with ♡ and a little lavender magic
+            <span>✧</span>
+        </footer>
+
+    </main>
 
 </body>
 </html>
